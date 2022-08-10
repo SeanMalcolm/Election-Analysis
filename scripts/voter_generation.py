@@ -48,7 +48,7 @@ def generate_voters(senate_votes : pd.DataFrame):
 def read_senate_data():
     
     data_folder = os.path.join(os.path.dirname(os.getcwd()), 'data')
-    senate_votes = pd.read_csv(f"{data_folder}/aec-senate-formalpreferences-27966-VIC.csv", nrows=200000)
+    senate_votes = pd.read_csv(f"{data_folder}/aec-senate-formalpreferences-27966-VIC.csv")
     return senate_votes
 
 

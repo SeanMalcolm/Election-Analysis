@@ -73,6 +73,7 @@ if __name__ == '__main__':
     
     senate_votes = voter_generation.read_senate_data()
     print("data read")
+    senate_votes = senate_votes[senate_votes['Division'] == 'Higgins']
     voters = voter_generation.generate_voters(senate_votes)
     print('voters_generated')
     relevant_parties = voter_generation.get_relevant_parties()
